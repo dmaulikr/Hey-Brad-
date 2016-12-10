@@ -13,6 +13,8 @@
 		348E07731DFCA4BE00C44155 /* Hey_Brad_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 348E07711DFCA4BE00C44155 /* Hey_Brad_.xcdatamodeld */; };
 		348E07751DFCA4BE00C44155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348E07741DFCA4BE00C44155 /* Assets.xcassets */; };
 		348E07781DFCA4BE00C44155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348E07761DFCA4BE00C44155 /* LaunchScreen.storyboard */; };
+		348E07811DFCA4C900C44155 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348E07801DFCA4C900C44155 /* MapKit.framework */; };
+		348E07831DFCA6D400C44155 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348E07821DFCA6D400C44155 /* LocationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		348E07741DFCA4BE00C44155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348E07771DFCA4BE00C44155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		348E07791DFCA4BE00C44155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348E07801DFCA4C900C44155 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		348E07821DFCA6D400C44155 /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348E07811DFCA4C900C44155 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				348E07691DFCA4BE00C44155 /* Hey Brad! */,
 				348E07681DFCA4BE00C44155 /* Products */,
+				348E077F1DFCA4C900C44155 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +62,24 @@
 		348E07691DFCA4BE00C44155 /* Hey Brad! */ = {
 			isa = PBXGroup;
 			children = (
-				348E076A1DFCA4BE00C44155 /* AppDelegate.swift */,
+				348E07821DFCA6D400C44155 /* LocationData.swift */,
 				348E076C1DFCA4BE00C44155 /* ViewController.swift */,
 				348E076E1DFCA4BE00C44155 /* Main.storyboard */,
 				348E07741DFCA4BE00C44155 /* Assets.xcassets */,
+				348E076A1DFCA4BE00C44155 /* AppDelegate.swift */,
 				348E07761DFCA4BE00C44155 /* LaunchScreen.storyboard */,
 				348E07791DFCA4BE00C44155 /* Info.plist */,
 				348E07711DFCA4BE00C44155 /* Hey_Brad_.xcdatamodeld */,
 			);
 			path = "Hey Brad!";
+			sourceTree = "<group>";
+		};
+		348E077F1DFCA4C900C44155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				348E07801DFCA4C900C44155 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +115,11 @@
 					348E07661DFCA4BE00C44155 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348E07831DFCA6D400C44155 /* LocationData.swift in Sources */,
 				348E076D1DFCA4BE00C44155 /* ViewController.swift in Sources */,
 				348E076B1DFCA4BE00C44155 /* AppDelegate.swift in Sources */,
 				348E07731DFCA4BE00C44155 /* Hey_Brad_.xcdatamodeld in Sources */,
