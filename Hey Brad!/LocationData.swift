@@ -9,13 +9,15 @@
 import UIKit
 import MapKit
 
+
+
 class LocationData: CLLocationManager {
     
     
     
-    var currentLocation = CLLocation.init(coordinate: currentLocation, altitude: self.currentAltitude?, horizontalAccuracy: self.currentHAccuracy?, verticalAccuracy: self.currentVAccuracy?, timestamp: self.currentTime?)
+  //  var locationData = CLLocation(coordinate: CLLocationCoordinate2D?, altitude: CLLocationDistance, horizontalAccuracy: CLLocationAccuracy, verticalAccuracy: CLLocationAccuracy, course: CLLocationDirection, speed: CLLocationSpeed, timestamp: Date)
     
-    
+   // var currentLocation = CLLocationCoordinate2D!
     var currentAltitude = CLLocationDistance()
     var currentHAccuracy = CLLocationAccuracy()
     var currentVerticalAccuracy = CLLocationAccuracy()

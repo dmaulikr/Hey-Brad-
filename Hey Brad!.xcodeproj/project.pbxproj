@@ -15,6 +15,7 @@
 		348E07781DFCA4BE00C44155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348E07761DFCA4BE00C44155 /* LaunchScreen.storyboard */; };
 		348E07811DFCA4C900C44155 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348E07801DFCA4C900C44155 /* MapKit.framework */; };
 		348E07831DFCA6D400C44155 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348E07821DFCA6D400C44155 /* LocationData.swift */; };
+		348E07851DFCDC0200C44155 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348E07841DFCDC0200C44155 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		348E07791DFCA4BE00C44155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348E07801DFCA4C900C44155 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		348E07821DFCA6D400C44155 /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		348E07841DFCDC0200C44155 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		348E07691DFCA4BE00C44155 /* Hey Brad! */ = {
 			isa = PBXGroup;
 			children = (
+				348E07841DFCDC0200C44155 /* LocationModel.swift */,
 				348E07821DFCA6D400C44155 /* LocationData.swift */,
 				348E076C1DFCA4BE00C44155 /* ViewController.swift */,
 				348E076E1DFCA4BE00C44155 /* Main.storyboard */,
@@ -116,6 +119,9 @@
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
 								enabled = 1;
 							};
@@ -162,6 +168,7 @@
 				348E07831DFCA6D400C44155 /* LocationData.swift in Sources */,
 				348E076D1DFCA4BE00C44155 /* ViewController.swift in Sources */,
 				348E076B1DFCA4BE00C44155 /* AppDelegate.swift in Sources */,
+				348E07851DFCDC0200C44155 /* LocationModel.swift in Sources */,
 				348E07731DFCA4BE00C44155 /* Hey_Brad_.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +329,7 @@
 				348E077E1DFCA4BE00C44155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

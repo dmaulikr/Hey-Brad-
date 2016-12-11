@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,13 +24,33 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4J0-SV-gLj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pM-eu-Fjf">
+                                <rect key="frame" x="10" y="21" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToCurrentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hd1-KN-n7b"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSp-AY-pBh">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="r6w-eg-Cgp"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4J0-SV-gLj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Luk-pe-t8L"/>
-                            <constraint firstItem="4J0-SV-gLj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="l8O-c1-Scz"/>
-                            <constraint firstAttribute="trailing" secondItem="4J0-SV-gLj" secondAttribute="trailing" id="nyT-me-Mwr"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="4J0-SV-gLj" secondAttribute="bottom" id="wDd-QN-THZ"/>
+                            <constraint firstAttribute="trailing" secondItem="JSp-AY-pBh" secondAttribute="trailing" id="DJj-yF-fHE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JSp-AY-pBh" secondAttribute="bottom" id="WQO-8W-eU7"/>
+                            <constraint firstItem="JSp-AY-pBh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aXS-QF-hAt"/>
+                            <constraint firstItem="4J0-SV-gLj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fuC-vF-LRu"/>
+                            <constraint firstAttribute="trailing" secondItem="4J0-SV-gLj" secondAttribute="trailing" id="hMF-N2-wpK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4J0-SV-gLj" secondAttribute="bottom" id="ieq-Co-UWf"/>
+                            <constraint firstItem="4J0-SV-gLj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y0e-LU-A1C"/>
                         </constraints>
                     </view>
                     <connections>
@@ -40,6 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="41.829085457271368"/>
         </scene>
     </scenes>
 </document>
